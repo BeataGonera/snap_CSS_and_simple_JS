@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 18px;
+}
+
+body{
+    font-family: 'Epilogue', sans-serif;
+}
+
+.wrapper{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 10fr; 
+    row-gap: 5%;
+    padding: 3%; 
+    padding-top: 0;
+}
+
+img.snap{
+    width: 12%;
+    height: 50%;
+    margin-top: 2%;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+}
+
+nav a{
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+}
+
+.features{
+    display: flex;
+    gap: 6%;
+}
+
+.features img{
+    width: 12%;
+    height: 11%;
+    margin-top: 0.25rem;
+}
+
+.company{
+    display: flex;
+    gap: 6%;
+}
+
+.company img{
+    width: 12%;
+    height: 11%;
+    margin-top: 0.25rem;
+
+}
+
+.login-register{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 7%;
+    color:hsl(0, 0%, 41%);
+}
+
+.register-button{
+    width: 150px;
+    height: 50px;
+    right: -70px;
+    border: 2px solid hsl(0, 0%, 41%);
+    border-radius: 15px;
+    background: white;
+    color:hsl(0, 0%, 41%);
+    font-family: 'Epilogue', sans-serif;
+    font-size: 1rem;
+}
+
+.text-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 15%;
+    padding-left: 20%;
+    padding-bottom: 15%;
+}
+
+.title{
+    font-size: 2.5rem;
+
+}
+
+.subtitle{
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.1;
+    line-height: 1.5;
+    color: hsl(0, 0%, 41%);
+    margin-right: 15%;
+}
+
+.learn-more-button{
+    background: black;  
+    color: white;
+    width: 200px;
+    height: 70px;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 700;
+}
+
+.logos{
+    display: flex;
+    justify-content: space-between;
+    height: 4%;
+    margin-right: 10%;
+}
+
+.picture-container{
+    background-image: url(images/image-hero-desktop.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-bottom: 15%;
+    margin-right: 15%;
+}
+
