@@ -8,7 +8,36 @@ let companyStroll = document.getElementById('company-stroll');
 let featuresClickCounter = 1;
 let companyClickCounter = 1;
 
-featuresLink.onclick = function showFeaturesMenu(){
+
+featuresLink.onmouseover = function showFeaturesMenu(){
+    featuresMenu.classList.add('features-menu-open');
+    featuresMenu.style.display = "flex";
+    featuresStroll.src = "/images/icon-arrow-up.svg";
+}
+
+featuresLink.onmouseleave = function hideFeaturesMenu(){
+    if(featuresClickCounter % 2 !==0){
+    featuresMenu.classList.remove('features-menu-open');
+    featuresMenu.style.display = "none";
+    featuresStroll.src = "/images/icon-arrow-down.svg";
+    }
+}
+
+companyLink.onmouseover = function showCompanyMenu(){
+    companyMenu.classList.add('company-menu-open');
+    companyMenu.style.display = "flex";
+    companyStroll.src = "/images/icon-arrow-up.svg";
+}
+
+companyLink.onmouseleave = function hideCompanyMenu(){
+    if(companyClickCounter % 2 !==0){
+    companyMenu.classList.remove('company-menu-open');
+    companyMenu.style.display = "none";
+    companyStroll.src = "/images/icon-arrow-down.svg";
+    }
+}
+
+featuresLink.onclick = function displayFeaturesMenu(){
     
     if(featuresClickCounter % 2 !==0){
       featuresMenu.classList.add('features-menu-open');
@@ -22,7 +51,7 @@ featuresLink.onclick = function showFeaturesMenu(){
     return featuresClickCounter++
 }
 
-companyLink.onclick = function showCompanyMenu(){
+companyLink.onclick = function displayCompanyMenu(){
     
     if(companyClickCounter % 2 !==0){
       companyMenu.classList.add('company-menu-open');
