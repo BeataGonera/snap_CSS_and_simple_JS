@@ -28,16 +28,24 @@ img.snap{
     margin-top: 2%;
 }
 
-nav{
+nav.desktop-nav{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 5%;
 }
 
+nav.mobile-nav{
+    display: none;
+}
+
 nav a{
     text-decoration: none;
     color: hsl(0, 0%, 41%);
+}
+
+.menu-icon{
+    display: none
 }
 
 .features{
@@ -92,9 +100,12 @@ nav a{
     padding-bottom: 15%;
 }
 
-.title{
+.title-desktop{
     font-size: 2.5rem;
+}
 
+.title-mobile{
+    display: none;
 }
 
 .subtitle{
@@ -133,3 +144,107 @@ nav a{
     margin-right: 15%;
 }
 
+@media screen and (max-width: 375px){
+
+    html{
+        font-size: 10px;
+    }
+
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .wrapper{
+        height: 100vh;
+        width: 100vw;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 40% 50%;
+        gap: 0;
+        padding: 0;
+    }
+
+    nav.mobile-nav{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    nav.mobile-nav img.snap{
+        width: 25%;
+        height: 90%;
+        display: flex;
+        margin-top: 0;
+    }
+
+    nav.mobile-nav img.menu-icon{
+        width: 10%;
+        height: 60%;
+        display: flex;
+    }
+
+    .picture-container{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        width: 100vw;
+        background-position: center;
+        background-image: url(./images/image-hero-mobile.png);
+        padding: 0;
+        margin: 0;
+    }
+
+    .text-part{
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        width: 100vw;
+        padding: 5%;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 5%;
+    }
+
+    .title-desktop{
+        display: none;
+    }
+
+    .title-mobile{
+        display: inherit;
+        font-size: 1.7rem;
+    }
+
+    .subtitle{
+        margin: 0;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 300;
+        letter-spacing: 0.05rem;
+        line-height: 2.5rem;
+    }
+
+    div.login{
+        display: none;
+    }
+
+    nav.desktop-nav{
+        display: none;
+    }
+
+    nav.mobile-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 5%;
+    }
+
+    .register-button{
+        display: none;
+    }
+
+    .learn-more-button{
+        width: 45%;
+        height: 15%;
+        font-size: 1.8rem;
+    }
+
+    .logos{
+        margin-right: 0;
+    }
+}

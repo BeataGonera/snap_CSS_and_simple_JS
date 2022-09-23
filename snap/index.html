@@ -8,8 +8,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" type="text/css" href="./style.css"/>
-<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Fraunces:opsz,wght@9..144,700&family=Karla:wght@400;700&family=Lato&family=League+Spartan:wght@400;500;700&family=Montserrat:wght@500;700&family=Poppins:wght@500;600;700&family=Roboto&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
-  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;700&family=Fraunces:opsz,wght@9..144,700&family=Karla:wght@400;700&family=Lato&family=League+Spartan:wght@400;500;700&family=Montserrat:wght@500;700&family=Poppins:wght@500;600;700&family=Roboto&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">  
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -23,9 +24,8 @@
   <div class="wrapper">
 
     
-    <nav>
-      <img class="snap" src="/images/logo.svg" alt="logo">
-      
+    <nav class="desktop-nav">
+      <img class="snap" src="/images/logo.svg" alt="logo">      
       <div class = "features">
         <a href="#">Features</a>
         <img src="/images/icon-arrow-down.svg" alt = "arrow-down"/>
@@ -40,13 +40,19 @@
       <a href="#">About</a>
     </nav>
 
+    <nav class="mobile-nav">
+      <img class="snap" src="/images/logo.svg" alt="logo">      
+      <img class="menu-icon" src="/images/icon-menu.svg"/>
+    </nav>
+
     <div class="login-register">
       <div class="login">Login</div>
       <button class="register-button">Register</button>
     </div>
 
     <div class="text-part">
-      <div class="title"><h1>Make <br> remote work</h1></div>
+      <div class="title-desktop"><h1>Make <br> remote work</h1></div>
+      <div class="title-mobile"><h1>Make remote work</h1></div>
       <div class="subtitle"><h3>Get your team in sync, no matter your location. Streamline processes, 
         create team rituals, and watch productivity soar.</h3></div>
       <button class="learn-more-button">Learn more</button>
