@@ -214,7 +214,7 @@ button:hover{
 }
 
 .picture-container{
-    background-image: url(images/image-hero-desktop.png);
+    background-image: url(./images/image-hero-desktop.png);
     background-size:contain;
     background-repeat: no-repeat;
     background-position: right;
